@@ -1,7 +1,7 @@
 {
   "name": "objects-node",
   "version": "0.0.0",
-  "description": "Node.js library for Segment Objects API",
+  "description": "Node.js client for Segment Objects API",
   "main": "lib/index.js",
   "author": "Segment <friends@segment.com>",
   "scripts": {
