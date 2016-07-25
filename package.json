@@ -1,0 +1,24 @@
+{
+  "name": "objects-node",
+  "version": "0.0.0",
+  "description": "Node.js library for Segment Objects API",
+  "main": "lib/index.js",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/segmentio/objects-node.git"
+  },
+  "keywords": [
+    "objects",
+    "segment",
+    "set"
+  ],
+  "author": "Segment <friends@segment.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/segmentio/objects-node/issues"
+  },
+  "homepage": "https://github.com/segmentio/objects-node",
+  "engines": {
+    "node": ">= 0.12.x"
+  }
+}
