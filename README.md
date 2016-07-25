@@ -21,9 +21,12 @@ var objects = new Objects('<your write key>')
 
 ```js
 objects.set('<collection>', '<id>', {
-  property1: '...',
-  property2: 123,
-  property3: true
+  some_property: 'some value',
+  name: 'Schrodinger',
+  is_alive: true,
+  is_dead: true,
+  owner: 'Erwin',
+  birth_year: 1935
 });
 ```
 
