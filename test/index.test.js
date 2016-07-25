@@ -179,6 +179,18 @@ describe('Objects', function() {
         }
       });
     });
+
+    it('should snakecase properties', function() {
+      objects.set('users', 'abc123', {
+        fullName: 'Tejas Manohar'
+      });
+      assert.deepEqual(objects._queue.users[0].message, {
+        id: 'abc123',
+        properties: {
+          full_name: 'Tejas Manohar'
+        }
+      });
+    });
   });
 });
 
