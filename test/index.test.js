@@ -134,6 +134,51 @@ describe('Objects', function() {
         }
       });
     });
+
+    it('should validate collection', function() {
+      assert.throws(
+        function() {
+          objects.set({ name: 'haha' });
+        },
+        error('You must specify a `collection`.')
+      );
+    });
+
+    it('should validate id', function() {
+      assert.throws(
+        function() {
+          objects.set('apples', null, {
+            name: 'haha'
+          });
+        },
+        error('You must specify an `id`.')
+      );
+    });
+
+    it('should validate properties', function() {
+      assert.throws(
+        function() {
+          objects.set('c', 'i');
+        },
+        error('You must specify `properties`.')
+      );
+    });
+
+    it('should flatten properties', function() {
+      objects.set('users', 'abc123', {
+        name: {
+          first: 'Tejas',
+          last: 'Manohar'
+        }
+      });
+      assert.deepEqual(objects._queue.users[0].message, {
+        id: 'abc123',
+        properties: {
+          name_first: 'Tejas',
+          name_last: 'Manohar'
+        }
+      });
+    });
   });
 });
 
