@@ -1,4 +1,4 @@
-# objects-node [![Build Status](https://travis-ci.org/segmentio/objects-node.svg?branch=master)](https://travis-ci.org/segmentio/objects-node)
+# objects-node [![Build Status](https://travis-ci.org/segmentio/objects-node.svg?branch=master)](https://travis-ci.org/segmentio/objects-node) [![npm version](https://badge.fury.io/js/objects-node.svg)](https://badge.fury.io/js/objects-node)
 
   Node.js client for Segment Objects API
 
