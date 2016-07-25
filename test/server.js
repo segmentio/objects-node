@@ -1,4 +1,4 @@
-var debug = require('debug')('analytics-node:server')
+var debug = require('debug')('objects-node:server')
 var httpProxy = require('http-proxy');
 var express = require('express');
 var http = require('http');
