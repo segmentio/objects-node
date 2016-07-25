@@ -6,9 +6,11 @@
 ## Setup
 
 To install,
+
 `npm install --save objects-node`
 
 Then, in your code,
+
 ```js
 var Objects = require('objects-node');
 var objects = new Objects('<your write key>')
